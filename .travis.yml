@@ -1,0 +1,4 @@
+install:
+    - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended texlive-xetex
+script:
+    - xelatex CV.ltx
