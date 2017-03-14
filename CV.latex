@@ -1,0 +1,107 @@
+%!TEX TS-program = xelatex
+\documentclass[]{friggeri-cv}
+
+\begin{document}
+\header{Martin}{Kemp}
+       {Build Engineering \& DevOps Specialist}
+
+
+% In the aside, each new line forces a line break
+\begin{aside}
+    \section{about}
+        131 Platform
+        11 The Boulevard
+        Crawley
+        West Sussex
+        United Kingdom
+        ~
+        \href{mailto:martin@martinke.mp}{martin@martinke.mp}
+        \href{https://martinke.mp}{https://martinke.mp}
+    \section{languages}
+        English
+    \section{programming}
+        Python
+        C\# .NET \& Mono
+        Java
+        Go
+        Rust
+        C\(++\)
+        Javascript
+        HTML5 \& CSS3
+        Puppet
+\end{aside}
+
+\section{interests}
+
+Software Development, DevOps, Agile, Programming Languages, Emulation and Interpretation, Efficiency
+
+\section{education}
+
+\begin{entrylist}
+    \entry
+        {2011}
+        {Advanced Apprenticeship, Level 3 Diploma}
+        {Zenos IT Academy \(Defunct\)}
+        {Apprenticeship in IT \& Telecoms Professionals}
+    \entry
+        {2004-2009}
+        {GCSE Level}
+        {Perry Beeches School, Birmingham}
+        {>5 A*-C GCSE}
+\end{entrylist}
+
+\section{experience}
+
+\begin{entrylist}
+    \entry
+        {09–2011 08-2012}
+        {Birmingham, United Kingdom}
+        {Capgemini - Junior Developer}
+        {Developed in a small team a consolidated database/web front end to all personnel management within the company, using technologies such as ASP.NET, C\#, MSSQL, SSRS, SSIS.
+         Also developed and debugged a contract management system for the DfE within a medium sized team.}
+    \entry
+        {09-2012 11-2012}
+        {Birmingham, United Kingdom}
+        {Compass Group - Support Analyst}
+        {Helped end users solve issues they are currently having with PCs, POS devices and network devices to ensure they can continue working.}
+    \entry
+        {03-2013 10-2014}
+        {Lichfield, United Kingdom}
+        {Police Mutual - Application Support}
+        {During my time at Police Mutual I have supported the running of the main financial system within the company, this included changes to data when needed, supported testing and training of new features for this system.
+
+        I have opted to assist first line support when they have low numbers and support users with my knowledge of Windows operating systems.
+
+        I have been involved with having a better IT presence within the company, being around the users when they have issues and supporting their work and with weekly and fortnightly meetings with heads of individual teams to note issues that require work.
+
+        I have assisted the development team by fixing bugs within the system of which they have no time to look at, this included an issue which prevented multiple customers from purchasing popular products.
+
+        I am currently working on an additional system that will automate many data fixes that are usually done manually, this will significantly reduce the workload of IT in general.
+
+        ==================================================================
+
+        I was (from Nov 2013) representing the IT department as their VOICE representative.
+
+        The VOICE represents the entire workforce and is a team with which the Group will:
+        - Share information about strategic decisions and issues of importance to staff
+        - Promote an exchange of views about those issues
+        - Test ideas and approaches with staff
+        - Give staff an opportunity to influence the implementation of decisions
+
+        Over the course of five months, I have represented the views of the IT department over contract changes and made sure their voices and concerns were heard during this process.
+
+        ==================================================================
+
+        Technologies Used:
+
+        Microsoft SQL (T-SQL)
+        .NET Framework 4.0+
+        ASP.NET
+        Window Forms
+        Windows Presentation Foundation (WPF)
+        IIS
+        SSIS
+        SSRS
+        System Centre Service Manager}
+\end{entrylist}
+\end{document}
