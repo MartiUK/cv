@@ -1,8 +1,15 @@
 sudo: required
 dist: trusty
 services:
-    - docker
+- docker
 before_install:
-    - docker pull blang/latex
+- docker build -t martiuk/latex
 script:
-    - docker run -it -v "$PWD":/build blang/latex "xelatex cv.tex --halt-on-error"
+- docker run -it -v "$PWD":/build martiuk/latex "xelatex cv.tex --halt-on-error"
+deploy:
+  provider: releases
+  api_key:
+    secure: EVta0jprwA/dzCtl4yAn14k6rAju0yxLp9dlA4lQlEViZWmBJEzZMUighzORcUl/Ui+PWZpKCoJL78Q6kjTlz8TSR6nhI0B2tKZAprF8F3rOcjEUKlz71eLPO+Zh9fKWNafJRfN8ubCebV4eeKLDno0OC/Hhr8aT3xF4oy5UAlKx19L/lbge+e7bDL9wRlXOwB1WxLxBQnQvq/XR+SE3wN3dAML/4lYV1tcV664K7vmsPX2DRlFdCCWAwsF04AtDyPsYGrWyVfQmyvv/6prSgGvrNzZCV4oAximcRp8Msrm/g/J4m2uiAn8km5nhPI//qFju4Kiie+7FMaYJoH8/QxJOzRpPPcecCUPLLz0L1H3Kg9rjWEBXKKs/hqDrIl7gKO3DDiKqvtjGkV8NprTWNuM1BnaS9zugAKYFmZRl7ZzqDHe6Ehz+lO30e43KhieMlBLnh39MBtMqtEE4sjtzOifhx6fDpJYx4qijsCeAMU+Ckgk/bJIXg24wc+fpLO+6LCStTfsj7kcV+ta1LM4wemioeJJp/nQeqPcE6HDVsT2XX5oyntQ8tmQ4yeCfxDFHbdoBPP6OtCn1XPcPc58idKSKDa8qjDRQF0o68u/EL4vPs8CVsbHLHCeN0dSxvDlFliQ+kMz2KzhOPn1HXOPefk7PeEMpO6EcwF93UEWF/1E=
+  file: cv.pdf
+  on:
+    repo: MartiUK/cv
