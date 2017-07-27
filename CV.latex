@@ -5,7 +5,6 @@
 \header{Martin}{Kemp}
        {Build Engineering \& DevOps Specialist}
 
-
 % In the aside, each new line forces a line break
 \begin{aside}
     \section{about}
@@ -15,8 +14,7 @@
         West Sussex
         United Kingdom
         ~
-        \href{mailto:martin@martinke.mp}{martin@martinke.mp}
-        \href{https://martinke.mp}{https://martinke.mp}
+        \href{mailto:martin@foxandducksoftware.co.uk}{martin@foxandducksoftware.co.uk}
     \section{languages}
         English
     \section{programming}
