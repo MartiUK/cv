@@ -5,4 +5,4 @@ services:
 before_install:
     - docker pull blang/latex
 script:
-    - docker run -it -v "$PWD":/build blang/latex "xelatex CV.latex --halt-on-error"
+    - docker run -it -v "$PWD":/build blang/latex "xelatex cv.tex --halt-on-error"
