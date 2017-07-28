@@ -1,4 +1,4 @@
-FROM ubuntu:zesty
+FROM ubuntu:xenial
 MAINTAINER Martin Kemp <me@martinke.mp>
 ENV DEBIAN_FRONTEND noninteractive
 
