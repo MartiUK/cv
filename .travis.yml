@@ -3,9 +3,9 @@ dist: trusty
 services:
 - docker
 before_install:
-- docker build -t martiuk/latex .
+- docker pull foxandduck/cv
 script:
-- docker run -it -v "$PWD":/build martiuk/latex "/usr/bin/xelatex cv.tex --halt-on-error"
+- docker run -it -v "$PWD":/build foxandduck/cv "/usr/bin/xelatex cv.tex --halt-on-error"
 deploy:
   provider: releases
   api_key:
