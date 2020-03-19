@@ -2,6 +2,7 @@ os: linux
 language: minimal
 dist: bionic
 before_install:
+- sudo apt update
 - sudo apt install texlive-latex-extra
 script:
 - xelatex cv.tex --halt-on-error
