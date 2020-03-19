@@ -1,11 +1,10 @@
-sudo: required
-dist: trusty
-services:
-- docker
+os: linux
+language: minimal
+dist: bionic
 before_install:
-- docker pull foxandduck/cv
+- apt install texlive-latex-extra
 script:
-- docker run -it -v "$PWD":/build foxandduck/cv "/usr/bin/xelatex cv.tex --halt-on-error"
+- xelatex cv.tex --halt-on-error
 deploy:
   provider: releases
   api_key:
