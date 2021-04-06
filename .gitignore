@@ -1,5 +1,5 @@
 *.log
 .DS_Store
 cv.out
-cv.pdf
+*.pdf
 cv.synctex.gz
