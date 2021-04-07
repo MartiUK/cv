@@ -1,8 +1,0 @@
-os: linux
-language: shell
-dist: bionic
-before_install:
-- sudo apt-get update
-- sudo apt-get install texlive-latex-extra texlive-xetex texlive-fonts-recommended texlive-fonts-extra
-script:
-- xelatex cv.tex --halt-on-error
